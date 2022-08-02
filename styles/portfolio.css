@@ -1,0 +1,197 @@
+h1,
+h2 {
+  font-family: "Bodoni Moda", serif;
+  font-weight: lighter;
+  color: #a3a8b3;
+}
+
+h3,
+h4,
+p,
+a {
+  /*transform: rotate(90deg);*/
+  font-family: "Kantumruy Pro", sans-serif;
+  letter-spacing: 0.1em;
+  margin: 0;
+  color: #817261;
+}
+
+h1 {
+  font-size: 120px;
+  font-weight: lighter;
+  line-height: 1em;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px;
+}
+
+a {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a3a8b3;
+}
+
+body {
+  padding-top: 5vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.hero-mobile {
+  display: none;
+}
+
+.hero-main {
+  height: 100vh;
+}
+
+.hero-main-image {
+  position: relative;
+  width: 50vw;
+  display: flex;
+  float: right;
+  margin-right: 12vw;
+}
+
+.hero-main-heading {
+  position: absolute;
+  width: 60%;
+  margin-left: 11.5vw;
+  margin-top: 33vh;
+  padding-bottom: 3%;
+  border-bottom: 1px solid #817261;
+}
+
+.hero-main-subheading {
+  transform: rotate(90deg);
+  position: absolute;
+  margin-top: 32vh;
+  margin-left: 70vw;
+}
+
+.read-more {
+  position: absolute;
+  margin-top: 72vh;
+  margin-left: 62vw;
+}
+
+.homepage-content {
+  display: block;
+  margin: 0 auto;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  text-align: center;
+}
+
+.section-1 {
+  margin-bottom: 5vh;
+  border: 2px solid blue;
+}
+
+.info {
+  border-right: 3px solid #817261;
+  text-align: right;
+  padding-right: 10%;
+}
+
+.about-me {
+  text-align: left;
+  padding-left: 8%;
+}
+
+.section-2 {
+  margin-bottom: 5vh;
+  border: 2px solid blue;
+}
+
+.knowledge {
+  text-align: right;
+  padding-right: 10%;
+  padding-top: 5vh;
+}
+
+.icons {
+  font-size: 45px;
+  color: #a3a8b3;
+}
+
+.icon-section {
+  text-align: center;
+  border-left: 3px solid #817261;
+}
+
+.individual-icon {
+  margin: 25px 0px;
+}
+
+@media (max-width: 1000px) {
+  body {
+    padding: 0px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  nav {
+    padding-left: 5vw;
+    padding-top: 2vh;
+  }
+
+  .hero-main {
+    display: none;
+  }
+
+  .hero-main-subheading {
+    display: none;
+  }
+
+  .hero-mobile {
+    padding: 0;
+    display: block;
+    width: 100vw;
+    margin-bottom: 5vh;
+  }
+
+  .hero-mobile-image {
+    padding-top: 2vh;
+    width: 100vw;
+    height: 60vh;
+    object-fit: cover;
+  }
+
+  .hero-mobile-text {
+    margin-right: 7vw;
+    margin-left: 15vw;
+    padding-top: 2.5vh;
+    text-align: right;
+  }
+
+  .contents {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+}
+
+@media (min-width: 545px) and (max-width: 1000px) {
+}
