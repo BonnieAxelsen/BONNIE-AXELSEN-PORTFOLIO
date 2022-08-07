@@ -25,10 +25,29 @@
 </head>
 
 <body>
-    <nav>
-        <div class="menu-icon" id="menu-icon">
-            <a href="#"> <i class="fa-solid fa-bars"></i></a>
-        </div>
+    <div id="myNav" class="overlay">
+        <nav class="nav-overlay">
+            <i class="fa-solid fa-xmark menu-icon" onclick="closeNav()"></i>
+            <div class="nav-overlay-text">
+                <ul>
+                    <li>
+                        <a href="#" onclick="closeNav()">Home</a>
+                    </li>
+                    <li>
+                        <a href="#homepage-content" onclick="closeNav()">About</a>
+                    </li>
+                    <li>
+                        <a href="/projects.html" onclick="closeNav()">Projects</a>
+                    </li>
+                    <li>
+                        <a href="/contact.html" onclick="closeNav()">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <nav class="main">
+        <i class="fa-solid fa-bars menu-icon" onclick="openNav()"></i>
     </nav>
     <div class="container-fluid">
         <div class="hero-main">
@@ -56,37 +75,231 @@
                 </h3>
             </div>
         </div>
-        <div class="homepage-content">
+        <div class="homepage-content" id="homepage-content">
             <div class="section-1">
+                <img class="about-me-image" src="/images/about-me-image.jpg" alt="">
                 <div class="row mt-4 mb-4 p-4">
-                    <div class="col-sm-6 col-md-8 info">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ducimus voluptate sit totam
-                            impedit rerum qui distinctio exercitationem architecto quasi libero dicta assumenda, nihil
-                            error incidunt reprehenderit suscipit, voluptatem id? Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Officia, molestiae dignissimos, qui illum nesciunt iusto optio molestias
-                            aspernatur in fugit sunt deleniti, cumque amet omnis nihil minima cum et accusantium?</p>
+                    <div class="col-sm-6 col-md-8 order-sm-first order-last sub-1 ">
+                        <p>Hi - my name is Bonnie Axelsen!</p>
+                        <p> I'm an aspiring front-end developer, originally
+                            from Melbourne, Australia, now living in Aarhus, Denmark with my husband and cat. </p>
+                        <br>
+                        <p>- Tech enthusiast, designer, sustainability advocate, lover of art, nature, food and
+                            exploring
+                            the world -
+                        </p>
                     </div>
-                    <div class="col-sm-6 col-md-4 about-me">
+                    <div class="col-sm-6 col-md-4 order-sm-last order-first sub-2 ">
                         <h2>about me</h2>
+                        <hr>
                     </div>
                 </div>
             </div>
-            <div class="section-2">
-                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque mollitia omnis corrupti laboriosam
-                    reprehenderit, laudantium, totam animi incidunt vitae asperiores nam debitis? Nulla nostrum quos
-                    minus adipisci quam non rerum.</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse voluptatum, consequuntur eligendi aut
-                    dolore nobis nemo soluta tempore. Aliquid quasi voluptatem corporis delectus ipsum dolorum
-                    recusandae repudiandae officia repellendus veniam.</p>
-            </div>
-        </div>
-        <div class="test">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sed labore repellat expedita fugiat,
-                nostrum minus pariatur! Temporibus eligendi tenetur quos nihil sint vel optio, sapiente vitae.
-                Voluptatum, pariatur. Cum.</h1>
-        </div>
 
-        <script src="/styles/script.js"></script>
+            <div class="section-2">
+                <div class="section-2-mobile-text-only">
+                    <h2>career experience</h2>
+                    <hr>
+                </div>
+                <div class="row mt-4 mb-4 p-4 section-2-desktop">
+                    <div class="col-sm-6 col-md-4 sub-3">
+                        <h2>career experience</h2>
+                    </div>
+                    <div class="col-sm-6 col-md-8 sub-4">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <p class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        <p>2022 - Bisgaard Sko - Aarhus, DK</p>
+                                    </button>
+                                </p>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p> <small>
+                                                <p> Jan 2022 - Mar 2022. Maintained static pages through Shopify store
+                                                    and produced
+                                                    email marketing layouts. Developed
+                                                    pages and functions that were otherwise not possible with
+                                                    current package. Eg.
+                                                    custom fonts, accordion menus, alternating grids, local video
+                                                    displays</p>
+                                            </small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <p class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        <p>2021 - Bisgaard Sko - Aarhus, DK </p>
+                                    </button>
+                                </p>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p> <small>Apr 2021 - Dec 2021. Translated Danish text to English for website,
+                                                B2B correspondance and
+                                                marketing collateral. Optimise SEO and website visuals and
+                                                accessibility in Shopify. Occasional front end coding and web design.
+                                            </small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <p class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        <p>2019 - Nordic & Co - Flåm, NO</p>
+                                    </button>
+                                </p>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p><small>Aug 2019 - Sep 2019. Altered layouts for magnets and postcards and
+                                                produced and
+                                                published a product catalog with InDesign and Illustrator. Assisted
+                                                with photoshoots and undertook various ad hoc tasks.
+                                            </small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <p class="accordion-header" id="flush-headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                        aria-controls="flush-collapseFour">
+                                        <p>2019 - SEED Heritage - Melbourne, AU</p>
+                                    </button>
+                                </p>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p><small>Nov 2018 - Jan 2019. Managed/maintained visual merchandising standards
+                                                in a Flagship
+                                                store. Outfitted clothing on racks, updated store according to
+                                                guidelines,
+                                                problem solved concept and stock issues and money mapped store to
+                                                determine best/worst sellers.
+                                            </small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <p class="accordion-header" id="flush-headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                        aria-controls="flush-collapseFive">
+                                        <p>2018 - Cotton On - Melbourne, AU</p>
+                                    </button>
+                                </p>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p><small>Nov 2016 - Jun 2018. Managed/maintained visual merchandising standards
+                                                of 6 stores in
+                                                my state. Outfitted clothing on racks and mannequins, updated store
+                                                according to guidelines, problem solved concept issues and
+                                                developed floor plans.
+                                            </small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="row">
+                    <div class="col">
+                        <div class="timeline-steps">
+                            <div class="timeline-step">
+                                <div class="timeline-content">
+                                    <div class="inner-circle"></div>
+                                    <p class="mt-3 mb-1"><strong>2018</strong></p>
+                                    <p class="mb-0 mb-lg-0">Field visual Merchandiser</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="timeline-content">
+                                    <div class="inner-circle"></div>
+                                    <p class="mt-3 mb-1"><strong>2019</strong></p>
+                                    <p class="mb-0 mb-lg-0">City visual merchandiser</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="timeline-content">
+                                    <div class="inner-circle"></div>
+                                    <p class="mt-3 mb-1"><strong>2019</strong></p>
+                                    <p class="mb-0 mb-lg-0">Graphic design intern</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="timeline-content">
+                                    <div class="inner-circle"></div>
+                                    <p class="mt-3 mb-1"><strong>2021</strong></p>
+                                    <p class="mb-0 mb-lg-0">E-commerce & marketing specialist</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step mb-0">
+                                <div class="timeline-content">
+                                    <div class="inner-circle"></div>
+                                    <p class="mt-3 mb-1"><strong>2022</strong></p>
+                                    <p class="mb-0 mb-lg-0"> Marketing specialist & web developer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="/projects.html"><button type="button" class="btn see-projects-link">See my
+                        projects</button></a>
+            </div>
+            <div class="section-1">
+                <div class="row mt-4 mb-4 p-4">
+                    <div class="col-sm-6 col-md-8 order-sm-first order-last sub-1">
+                        <p>SheCodes Basics Workshop, 2022 - SheCodes.io</p>
+                        <p>SheCodes Plus Workshop, 2022 - SheCodes.io</p>
+                        <p>SheCodes Responsive Workshop, 2022 - SheCodes.io</p>
+                        <br>
+                        <p>Bachelor of Design, 2015 - Whitehouse Institute of Design, Melbourne</p>
+                    </div>
+                    <div class="col-sm-6 col-md-4 order-sm-last order-first sub-2">
+                        <h2>education</h2>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <footer>
+        <p class="footer-text">Coded and designed by Bonnie Axelsen - 2022</p>
+        <div class="d-flex justify-content-evenly footer-icons">
+            <a href="mailto: bonniekhill94@gmail.com">
+                <i class="fa-regular fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/bonnie-axelsen-867aa2b5/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/BonnieAxelsen" target="_blank">
+                <i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+    <!-- I am a comment!
+
+    <img class="weather" src="/images/weather app mobile2.PNG" alt="">
+    <i class="fa-solid fa-at"></i>
+
+    <i class="fa-solid fa-envelope"></i> -->
+    <script src="/styles/script.js">
+    </script>
 </body>
 
 </html>
