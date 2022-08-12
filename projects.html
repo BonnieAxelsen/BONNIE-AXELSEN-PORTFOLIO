@@ -24,57 +24,102 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row mt-4 mb-4 p-4">
-            <div class="col-sm-6 col-md-5 knowledge">
-                <h2>skills </h2>
-                <h2>aquired</h2>
+    <div id="myNav" class="overlay">
+        <nav class="nav-overlay">
+            <i class="fa-solid fa-xmark menu-icon" onclick="closeNav()"></i>
+            <div class="nav-overlay-text">
+                <ul>
+                    <li>
+                        <a href="/index.html" onclick="closeNav()">Home</a>
+                    </li>
+                    <li>
+                        <a href="/#content" onclick="closeNav()">About</a>
+                    </li>
+                    <li>
+                        <a href="/projects.html" onclick="closeNav()">Projects</a>
+                    </li>
+                    <li>
+                        <a href="/contact.html" onclick="closeNav()">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <div class="col-sm-6 col-md-7 icon-section">
-                <div class="col">
-                    <div class="row row-cols-4">
-                        <div class="col individual-icon">
-                            <p class="icons"><i class="fa-brands fa-html5"></i></p>
-                            <p>html</p>
+        </nav>
+    </div>
+    <header>
+        <nav class="nav-main">
+            <i class="fa-solid fa-bars menu-icon" onclick="openNav()"></i>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="alternate-page-header">
+            <h1>projects</h1>
+        </div>
+        <div class="content">
+            <div class="section-1">
+                <div class="row mt-4 mb-4 p-3">
+                    <div class="col-sm-6 col-md-8 order-sm-first order-last sub-1">
+                        <img class="img-fluid project-image" src="/images/weather-app-group.png" alt="">
+                        <hr>
+                    </div>
+                    <div class="col-sm-6 col-md-4 order-sm-last order-first sub-2 ">
+                        <h2>weather app</h2>
+                        <p>Created using Bootstrap, HTML, CSS and vanilla JS. This app is responsive and uses an
+                            API.</p>
+                        <a href="https://sprightly-cascaron-d36548.netlify.app" target="_blank">
+                            <button type="button" class="btn secondary-button-link">
+                                Launch project
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-2">
+                <div class="row mt-4 mb-4 p-4">
+                    <div class="col-sm-6 col-md-4 sub-3">
+                        <h2>weather app 2.0</h2>
+                        <p>coming soon</p>
+                    </div>
+                    <div class="col-sm-6 col-md-8 sub-4">
+                        <img class="img-fluid project-image" src="/images/weather-app-group2.0.png" alt="">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="section-1">
+                <div class="row mt-4 mb-4 p-3">
+                    <div class="col-sm-6 col-md-8 order-sm-first order-last sub-1">
+                        <div>
+                            <img class="img-fluid project-image" src="/images/static homepage desktop.png" alt="">
+                            <hr>
                         </div>
-                        <div class="col individual-icon">
-                            <p class="icons"><i class="fa-brands fa-css3-alt"></i></p>
-                            <p>css</p></i>
-                        </div>
-                        <div class="col individual-icon">
-                            <p class="icons"><i class="fa-brands fa-js"></i></p>
-                            <p>java script</p>
-                        </div>
-                        <div class="col individual-icon">
-                            <p class="icons"><i class="fa-brands fa-bootstrap"></i></p>
-                            <p>bootstrap</p>
-                        </div>
-                        <div class="col individual-icon">
-                            <p class="icons"><i class="fa-brands fa-github"></i></p>
-                            <p>github</p>
-                        </div>
-                        <div class="col individual-icon">
-                            <p class="icons"><i class="fa-brands fa-figma"></i></p>
-                            <p>figma</p>
-                        </div>
-                        <div class="col individual-icon">
-                            <p class="icons"><i class="fa-brands fa-bootstrap"></i></p>
-                            <p>bootstrap</p>
-                        </div>
-                        <div class="col individual-icon">
-                            <p class="icons"><i class="fa-brands fa-github"></i></p>
-                            <p>github</p>
-                        </div>
-                        <div class="col individual-icon">
-                            <p class="icons"><i class="fa-brands fa-figma"></i></p>
-                            <p>figma</p>
-                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 order-sm-last order-first sub-2 ">
+                        <h2>static homepage</h2>
+                        <p>Created using HTML, CSS and vanilla JS. This app is not responsive.</p>
+                        <a href="https://www.shecodes.io/workshops/shecodes-basics-fafed551-de54-4c46-8fff-483bff7a9b23/projects/809315"
+                            target="_blank">
+                            <button type="button" class="btn secondary-button-link">
+                                Launch project
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
+    <footer>
+        <p class="footer-text">Coded and designed by Bonnie Axelsen - 2022</p>
+        <div class="d-flex justify-content-evenly footer-icons">
+            <a href="mailto: bonniekhill94@gmail.com">
+                <i class="fa-regular fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/bonnie-axelsen-867aa2b5/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/BonnieAxelsen" target="_blank">
+                <i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+    <script src="/styles/script.js">
+    </script>
 </body>
 
 </html>
