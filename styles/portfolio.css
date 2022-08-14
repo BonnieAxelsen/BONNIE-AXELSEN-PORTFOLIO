@@ -392,17 +392,18 @@ footer {
     font-size: 32px;
   }
 
+  p {
+    font-size: 11px;
+  }
+
   hr {
     color: var(--primary-color);
     display: block;
     margin: 4vh 0vw 0vh;
   }
 
-  .content {
-    padding: 0vh 13vw 0vh;
-  }
-
   .about-me-image {
+    padding-top: 0;
     width: 100%;
   }
 
@@ -466,10 +467,6 @@ footer {
     font-size: 18px;
   }
 
-  p {
-    font-size: 12;
-  }
-
   .container-fluid {
     padding-left: 0;
     padding-right: 0;
@@ -489,7 +486,7 @@ footer {
   }
 
   .hero-mobile {
-    padding: 4vh 0vw 0vh;
+    padding: 4vh 0vw 15vh;
     display: block;
     width: 100vw;
   }
@@ -497,19 +494,31 @@ footer {
   .hero-mobile-image {
     padding-top: 2vh;
     width: 100vw;
-    height: 55vh;
+    height: 75vh;
     object-fit: cover;
+    display: flex;
+    position: absolute;
   }
 
   .hero-mobile-text {
     margin-right: 7vw;
     margin-left: 15vw;
-    padding-top: 2.5vh;
+    padding-top: 48vh;
     text-align: right;
+    position: relative;
   }
 
   .hero-mobile-subheading {
     color: var(--secondary-color);
+  }
+
+  .content {
+    padding: 5vh 10vw 0vh;
+  }
+
+  .about-me-image {
+    padding-top: 8%;
+    width: 100%;
   }
 
   .timeline {
