@@ -357,6 +357,10 @@ hr {
   padding-bottom: 2.5vh;
 }
 
+.image-grid {
+  width: 100%;
+}
+
 /* Footer */
 footer {
   background-color: #a3a8b3;
